@@ -1,0 +1,17 @@
+This is CSS1.CSS
+body{
+  background: linear-gradient(to top, black, grey);
+}
+
+.center h1{font-style: font; color: whitesmoke;margin-top: 2cm;
+}
+p{margin-top:1cm;margin-bottom:1cm;margin-left: 4cm;
+  margin-right: 4cm;color:white;font-size: 15px;}
+
+
+
+.section1 h2{
+  color: whitesmoke;
+  margin-left: 4cm; 
+}
+p{margin-top:1em;margin-bottom:1em;font-size: 22px;}
