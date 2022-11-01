@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+ <title>Beer Addiction </title>
+ <link rel="stylesheet" href="css1.css">
+
+<style type="text/css">
+   #center{text-align: center;}
+ 
+ </style>
+</head>
+
+<body>
+ 
+<div id="center">
+ <h1>Pick the one you need to know </h1>
+
+    <p id="demo" style="display:none"><img src="budweiser.png"style="width: 270px;height:170px;margin-top: 2cm;
+    margin-bottom: 0.5cm;margin-left:8.5cm;margin-right:15cm">Budweiser is an American-style pale lager produced by AB InBev (Brown, 2016). Budweiser was founded in 1876 by Carl Conrad & Co. of St. Louis, Missouri, and has grown to become a major selling beer firm in the United States.</p>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">
+Pick budweiser！
+</button>
+
+ 
+    <p id="demo1" style="display:none"><img src="1664.png"style="width: 240px;height:170px;margin-top: 2cm;
+    margin-bottom: 0.5cm;margin-left:8.5cm;margin-right:15cm">Kronenbourg 1664 is a golden pale lager with a 5.5% ABV in continental Europe and a 5.0% ABV in the United Kingdom ( The Kronenbourg 1664, n.d.). It was first made in 1664 by master brewer Geronimus Hatt at Canon Brewery in the Alsace area of France.</p>
+<button type="button" onclick="document.getElementById('demo1').style.display='block'">
+Pick Kronenbourg 1664!
+</button>
+
+
+    <p id="demo2" style="display:none"><img src="corona.png"style="width: 270px;height:170px;margin-top: 2cm;
+    margin-bottom: 0.5cm;margin-left:8.5cm;margin-right:15cm">Corona is a beer brand owned by the Belgian firm AB InBev that is made by the Mexican brewery Cervecera Modelo (The USA Today, 2004). It is the most popular imported beer brand in the United States.</p>
+<button type="button" onclick="document.getElementById('demo2').style.display='block'">
+Pick Corona！
+</button>
+    
+    <p id="demo3" style="display:none"><img src="heineken.png"style="width: 270px;height:170px;margin-top: 1cm;
+    margin-bottom: 0.5cm;margin-left:8.5cm;margin-right:15cm">Heineken Lager Beer (Dutch: Heineken Pilsener), or simply Heineken, is a 5% ABV pale lager beer produced by the Dutch brewing corporation Heineken N.V (The Heineken Company, n.d.).</p>
+<button type="button" onclick="document.getElementById('demo3').style.display='block'">
+Pick Heineken！
+</button>      
+
+</div>
+
+<script>
+   function imgscroll(){
+      var img=document.getElementById("imgid");
+      if (img.src.match("budweiser.png")){
+           img.src="corona.png";
+      }
+      else if (img.src.match("corona.png")){
+           img.src="1664.png";
+      }     
+      else if (img.src.match("1664.png")){
+           img.src="heineken.png";
+      }     
+      else{
+         img.src="budweiser.png"
+      }
+   }
+
+   window.onload=function(){
+      t=setInterval(imgscroll,2000);
+   }
+
+</script>
+
+ 
+
+<div class="section1">
+ <h2 style="font-size: 26px; ">Reference:</h2>
+ <p style="font-size: 20px; color: white;margin-left: 4cm; margin-right: 4cm;">Brown, L. (2016, October 11). A-B InBev finalizes $100B billion acquisition of SABMiller, creating world's largest beer company. Chicago Tribune. https://www.chicagotribune.com/news/breaking/ct-4-hospitalized-overdoses-river-north-nightclub-sound-bar-20221030-drmxfaoqzvgpfexfrreqi53g44-story.html</p>
+ <p style="font-size: 20px; color: white;margin-left: 4cm; margin-right: 4cm;">Kronenbourg 1664. (n.d.). Our Histoire. Kronenbourg 1664. https://www.k1664.co.uk/our-history/</p>
+ <p style="font-size: 20px; color: white;margin-left: 4cm; margin-right: 4cm;">The Heineken Company. (n.d.). Our history. The Heineken Company. http://www.theheinekencompany.com/about-us/our-history </p>
+ <p style="font-size: 20px; color: white;margin-left: 4cm; margin-right: 4cm;">USA Today. (2004, June 12). Heineken to take over Mexican beer brands in U.S. USA Today. http://www.usatoday.com/money/companies/2004-06-21-heineken-mexico_x.htm </p>
+</div> 
+
+<div><img id="imgid" src="budweiser.png"></div>
+
+ 
+
+</body>  
+
+</html>
